@@ -1,0 +1,846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		260AED7D7B445EBC45758812 /* GreetMeTests-GreetMeFrameworkMocks.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A73F06BEB6A3BDBF40411D /* GreetMeTests-GreetMeFrameworkMocks.generated.swift */; };
+		A967754F298E685D0025D0C3 /* GreetMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A967754E298E685D0025D0C3 /* GreetMeApp.swift */; };
+		A9677551298E685D0025D0C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9677550298E685D0025D0C3 /* ContentView.swift */; };
+		A9677553298E685F0025D0C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9677552298E685F0025D0C3 /* Assets.xcassets */; };
+		A9677556298E685F0025D0C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9677555298E685F0025D0C3 /* Preview Assets.xcassets */; };
+		A9677560298E685F0025D0C3 /* GreetMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A967755F298E685F0025D0C3 /* GreetMeTests.swift */; };
+		A967756A298E685F0025D0C3 /* GreetMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9677569298E685F0025D0C3 /* GreetMeUITests.swift */; };
+		A967756C298E685F0025D0C3 /* GreetMeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A967756B298E685F0025D0C3 /* GreetMeUITestsLaunchTests.swift */; };
+		A9677583298E69450025D0C3 /* GreetMeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A967757D298E69450025D0C3 /* GreetMeFramework.framework */; };
+		A9677584298E69450025D0C3 /* GreetMeFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A967757D298E69450025D0C3 /* GreetMeFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A967758F298E6C7A0025D0C3 /* Mockingbird in Frameworks */ = {isa = PBXBuildFile; productRef = A967758E298E6C7A0025D0C3 /* Mockingbird */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A967755C298E685F0025D0C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9677543298E685D0025D0C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A967754A298E685D0025D0C3;
+			remoteInfo = GreetMe;
+		};
+		A9677566298E685F0025D0C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9677543298E685D0025D0C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A967754A298E685D0025D0C3;
+			remoteInfo = GreetMe;
+		};
+		A9677581298E69450025D0C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9677543298E685D0025D0C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A967757C298E69450025D0C3;
+			remoteInfo = GreetMeFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A9677588298E69450025D0C3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A9677584298E69450025D0C3 /* GreetMeFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		74A73F06BEB6A3BDBF40411D /* GreetMeTests-GreetMeFrameworkMocks.generated.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "GreetMeTests-GreetMeFrameworkMocks.generated.swift"; path = "MockingbirdMocks/GreetMeTests-GreetMeFrameworkMocks.generated.swift"; sourceTree = "<group>"; };
+		A967754B298E685D0025D0C3 /* GreetMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreetMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A967754E298E685D0025D0C3 /* GreetMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetMeApp.swift; sourceTree = "<group>"; };
+		A9677550298E685D0025D0C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A9677552298E685F0025D0C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9677555298E685F0025D0C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A967755B298E685F0025D0C3 /* GreetMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreetMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A967755F298E685F0025D0C3 /* GreetMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetMeTests.swift; sourceTree = "<group>"; };
+		A9677565298E685F0025D0C3 /* GreetMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreetMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9677569298E685F0025D0C3 /* GreetMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetMeUITests.swift; sourceTree = "<group>"; };
+		A967756B298E685F0025D0C3 /* GreetMeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetMeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A967757D298E69450025D0C3 /* GreetMeFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GreetMeFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9677548298E685D0025D0C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9677583298E69450025D0C3 /* GreetMeFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9677558298E685F0025D0C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A967758F298E6C7A0025D0C3 /* Mockingbird in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9677562298E685F0025D0C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A967757A298E69450025D0C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9677542298E685D0025D0C3 = {
+			isa = PBXGroup;
+			children = (
+				A967757E298E69450025D0C3 /* GreetMeFramework */,
+				A967754D298E685D0025D0C3 /* GreetMe */,
+				A967755E298E685F0025D0C3 /* GreetMeTests */,
+				A9677568298E685F0025D0C3 /* GreetMeUITests */,
+				A967754C298E685D0025D0C3 /* Products */,
+				E6C22A7B8EA48C672192FE18 /* Generated Mocks */,
+			);
+			sourceTree = "<group>";
+		};
+		A967754C298E685D0025D0C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A967754B298E685D0025D0C3 /* GreetMe.app */,
+				A967755B298E685F0025D0C3 /* GreetMeTests.xctest */,
+				A9677565298E685F0025D0C3 /* GreetMeUITests.xctest */,
+				A967757D298E69450025D0C3 /* GreetMeFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A967754D298E685D0025D0C3 /* GreetMe */ = {
+			isa = PBXGroup;
+			children = (
+				A967754E298E685D0025D0C3 /* GreetMeApp.swift */,
+				A9677552298E685F0025D0C3 /* Assets.xcassets */,
+				A9677554298E685F0025D0C3 /* Preview Content */,
+			);
+			path = GreetMe;
+			sourceTree = "<group>";
+		};
+		A9677554298E685F0025D0C3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A9677555298E685F0025D0C3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A967755E298E685F0025D0C3 /* GreetMeTests */ = {
+			isa = PBXGroup;
+			children = (
+				A967755F298E685F0025D0C3 /* GreetMeTests.swift */,
+			);
+			path = GreetMeTests;
+			sourceTree = "<group>";
+		};
+		A9677568298E685F0025D0C3 /* GreetMeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A9677569298E685F0025D0C3 /* GreetMeUITests.swift */,
+				A967756B298E685F0025D0C3 /* GreetMeUITestsLaunchTests.swift */,
+			);
+			path = GreetMeUITests;
+			sourceTree = "<group>";
+		};
+		A967757E298E69450025D0C3 /* GreetMeFramework */ = {
+			isa = PBXGroup;
+			children = (
+				A9677589298E699B0025D0C3 /* Services */,
+				A967758A298E69A80025D0C3 /* Models */,
+				A967758B298E69B20025D0C3 /* View Models */,
+				A967758C298E69BD0025D0C3 /* Views */,
+			);
+			path = GreetMeFramework;
+			sourceTree = "<group>";
+		};
+		A9677589298E699B0025D0C3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A967758A298E69A80025D0C3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A967758B298E69B20025D0C3 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		A967758C298E69BD0025D0C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A9677550298E685D0025D0C3 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E6C22A7B8EA48C672192FE18 /* Generated Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				74A73F06BEB6A3BDBF40411D /* GreetMeTests-GreetMeFrameworkMocks.generated.swift */,
+			);
+			name = "Generated Mocks";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A9677578298E69450025D0C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A967754A298E685D0025D0C3 /* GreetMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A967756F298E685F0025D0C3 /* Build configuration list for PBXNativeTarget "GreetMe" */;
+			buildPhases = (
+				A9677547298E685D0025D0C3 /* Sources */,
+				A9677548298E685D0025D0C3 /* Frameworks */,
+				A9677549298E685D0025D0C3 /* Resources */,
+				A9677588298E69450025D0C3 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9677582298E69450025D0C3 /* PBXTargetDependency */,
+			);
+			name = GreetMe;
+			productName = GreetMe;
+			productReference = A967754B298E685D0025D0C3 /* GreetMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A967755A298E685F0025D0C3 /* GreetMeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9677572298E685F0025D0C3 /* Build configuration list for PBXNativeTarget "GreetMeTests" */;
+			buildPhases = (
+				B37DAB4FFC79604CEA1149B8 /* Generate Mockingbird Mocks */,
+				A9677557298E685F0025D0C3 /* Sources */,
+				A9677558298E685F0025D0C3 /* Frameworks */,
+				A9677559298E685F0025D0C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A967755D298E685F0025D0C3 /* PBXTargetDependency */,
+			);
+			name = GreetMeTests;
+			packageProductDependencies = (
+				A967758E298E6C7A0025D0C3 /* Mockingbird */,
+			);
+			productName = GreetMeTests;
+			productReference = A967755B298E685F0025D0C3 /* GreetMeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A9677564298E685F0025D0C3 /* GreetMeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9677575298E685F0025D0C3 /* Build configuration list for PBXNativeTarget "GreetMeUITests" */;
+			buildPhases = (
+				A9677561298E685F0025D0C3 /* Sources */,
+				A9677562298E685F0025D0C3 /* Frameworks */,
+				A9677563298E685F0025D0C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9677567298E685F0025D0C3 /* PBXTargetDependency */,
+			);
+			name = GreetMeUITests;
+			productName = GreetMeUITests;
+			productReference = A9677565298E685F0025D0C3 /* GreetMeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A967757C298E69450025D0C3 /* GreetMeFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9677585298E69450025D0C3 /* Build configuration list for PBXNativeTarget "GreetMeFramework" */;
+			buildPhases = (
+				A9677578298E69450025D0C3 /* Headers */,
+				A9677579298E69450025D0C3 /* Sources */,
+				A967757A298E69450025D0C3 /* Frameworks */,
+				A967757B298E69450025D0C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GreetMeFramework;
+			productName = GreetMeFramework;
+			productReference = A967757D298E69450025D0C3 /* GreetMeFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9677543298E685D0025D0C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					A967754A298E685D0025D0C3 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					A967755A298E685F0025D0C3 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = A967754A298E685D0025D0C3;
+					};
+					A9677564298E685F0025D0C3 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = A967754A298E685D0025D0C3;
+					};
+					A967757C298E69450025D0C3 = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
+				};
+			};
+			buildConfigurationList = A9677546298E685D0025D0C3 /* Build configuration list for PBXProject "GreetMe" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9677542298E685D0025D0C3;
+			packageReferences = (
+				A967758D298E6C7A0025D0C3 /* XCRemoteSwiftPackageReference "mockingbird" */,
+			);
+			productRefGroup = A967754C298E685D0025D0C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A967754A298E685D0025D0C3 /* GreetMe */,
+				A967755A298E685F0025D0C3 /* GreetMeTests */,
+				A9677564298E685F0025D0C3 /* GreetMeUITests */,
+				A967757C298E69450025D0C3 /* GreetMeFramework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9677549298E685D0025D0C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9677556298E685F0025D0C3 /* Preview Assets.xcassets in Resources */,
+				A9677553298E685F0025D0C3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9677559298E685F0025D0C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9677563298E685F0025D0C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A967757B298E69450025D0C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B37DAB4FFC79604CEA1149B8 /* Generate Mockingbird Mocks */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Mockingbird Mocks";
+			outputPaths = (
+				"$(SRCROOT)/MockingbirdMocks/GreetMeTests-GreetMeFrameworkMocks.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -eu\n\n# Prevent Xcode 13 from running this script while indexing.\n[[ \"${ACTION}\" == \"indexbuild\" ]] && exit 0\n\n# Infer the derived data location from the build environment.\n[[ -z \"${DERIVED_DATA+x}\" ]] && DERIVED_DATA=\"$(echo \"${BUILD_ROOT}\" | sed -n 's|\\(.*\\)/Build/.*|\\1|p')\"\n\n\"${DERIVED_DATA}/SourcePackages/checkouts/mockingbird/mockingbird\" generate --targets \"GreetMeFramework\" --outputs \"${SRCROOT}/MockingbirdMocks/GreetMeTests-GreetMeFrameworkMocks.generated.swift\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9677547298E685D0025D0C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9677551298E685D0025D0C3 /* ContentView.swift in Sources */,
+				A967754F298E685D0025D0C3 /* GreetMeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9677557298E685F0025D0C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9677560298E685F0025D0C3 /* GreetMeTests.swift in Sources */,
+				260AED7D7B445EBC45758812 /* GreetMeTests-GreetMeFrameworkMocks.generated.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9677561298E685F0025D0C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A967756C298E685F0025D0C3 /* GreetMeUITestsLaunchTests.swift in Sources */,
+				A967756A298E685F0025D0C3 /* GreetMeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9677579298E69450025D0C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A967755D298E685F0025D0C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A967754A298E685D0025D0C3 /* GreetMe */;
+			targetProxy = A967755C298E685F0025D0C3 /* PBXContainerItemProxy */;
+		};
+		A9677567298E685F0025D0C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A967754A298E685D0025D0C3 /* GreetMe */;
+			targetProxy = A9677566298E685F0025D0C3 /* PBXContainerItemProxy */;
+		};
+		A9677582298E69450025D0C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A967757C298E69450025D0C3 /* GreetMeFramework */;
+			targetProxy = A9677581298E69450025D0C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A967756D298E685F0025D0C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A967756E298E685F0025D0C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9677570298E685F0025D0C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GreetMe/Preview Content\"";
+				DEVELOPMENT_TEAM = JJX3XFYDLA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.dubshepherd.GreetMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9677571298E685F0025D0C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GreetMe/Preview Content\"";
+				DEVELOPMENT_TEAM = JJX3XFYDLA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.dubshepherd.GreetMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A9677573298E685F0025D0C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JJX3XFYDLA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.dubshepherd.GreetMeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GreetMe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GreetMe";
+			};
+			name = Debug;
+		};
+		A9677574298E685F0025D0C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JJX3XFYDLA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.dubshepherd.GreetMeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GreetMe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GreetMe";
+			};
+			name = Release;
+		};
+		A9677576298E685F0025D0C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JJX3XFYDLA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.dubshepherd.GreetMeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GreetMe;
+			};
+			name = Debug;
+		};
+		A9677577298E685F0025D0C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JJX3XFYDLA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.dubshepherd.GreetMeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GreetMe;
+			};
+			name = Release;
+		};
+		A9677586298E69450025D0C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = JJX3XFYDLA;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.dubshepherd.GreetMeFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A9677587298E69450025D0C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = JJX3XFYDLA;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.dubshepherd.GreetMeFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9677546298E685D0025D0C3 /* Build configuration list for PBXProject "GreetMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A967756D298E685F0025D0C3 /* Debug */,
+				A967756E298E685F0025D0C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A967756F298E685F0025D0C3 /* Build configuration list for PBXNativeTarget "GreetMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9677570298E685F0025D0C3 /* Debug */,
+				A9677571298E685F0025D0C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9677572298E685F0025D0C3 /* Build configuration list for PBXNativeTarget "GreetMeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9677573298E685F0025D0C3 /* Debug */,
+				A9677574298E685F0025D0C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9677575298E685F0025D0C3 /* Build configuration list for PBXNativeTarget "GreetMeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9677576298E685F0025D0C3 /* Debug */,
+				A9677577298E685F0025D0C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9677585298E69450025D0C3 /* Build configuration list for PBXNativeTarget "GreetMeFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9677586298E69450025D0C3 /* Debug */,
+				A9677587298E69450025D0C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A967758D298E6C7A0025D0C3 /* XCRemoteSwiftPackageReference "mockingbird" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/birdrides/mockingbird";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A967758E298E6C7A0025D0C3 /* Mockingbird */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A967758D298E6C7A0025D0C3 /* XCRemoteSwiftPackageReference "mockingbird" */;
+			productName = Mockingbird;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A9677543298E685D0025D0C3 /* Project object */;
+}
