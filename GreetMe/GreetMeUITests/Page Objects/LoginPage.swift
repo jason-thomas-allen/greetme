@@ -10,10 +10,4 @@ import XCTest
 
 class LoginPage {
 
-    var app: XCUIApplication
-    
-    init(app: XCUIApplication) {
-        self.app = app
-    }
-    
 }
