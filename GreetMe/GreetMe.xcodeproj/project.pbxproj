@@ -160,6 +160,7 @@
 		A9677568298E685F0025D0C3 /* GreetMeUITests */ = {
 			isa = PBXGroup;
 			children = (
+				A96775A8298FB8740025D0C3 /* Page Objects */,
 				A9677569298E685F0025D0C3 /* GreetMeUITests.swift */,
 				A967756B298E685F0025D0C3 /* GreetMeUITestsLaunchTests.swift */,
 			);
@@ -211,6 +212,13 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A96775A8298FB8740025D0C3 /* Page Objects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Page Objects";
 			sourceTree = "<group>";
 		};
 		E6C22A7B8EA48C672192FE18 /* Generated Mocks */ = {

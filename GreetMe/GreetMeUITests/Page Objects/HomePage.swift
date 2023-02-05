@@ -10,7 +10,7 @@ import XCTest
 
 class HomePage {
     
-    var app: XCUIApplication
+    private var app: XCUIApplication
     
     init(app: XCUIApplication) {
         self.app = app
