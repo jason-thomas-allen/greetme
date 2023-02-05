@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import GreetMeFramework
 
 @main
 struct GreetMeApp: App {

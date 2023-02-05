@@ -9,15 +9,15 @@
 /* Begin PBXBuildFile section */
 		260AED7D7B445EBC45758812 /* GreetMeTests-GreetMeFrameworkMocks.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A73F06BEB6A3BDBF40411D /* GreetMeTests-GreetMeFrameworkMocks.generated.swift */; };
 		A967754F298E685D0025D0C3 /* GreetMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A967754E298E685D0025D0C3 /* GreetMeApp.swift */; };
-		A9677551298E685D0025D0C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9677550298E685D0025D0C3 /* ContentView.swift */; };
 		A9677553298E685F0025D0C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9677552298E685F0025D0C3 /* Assets.xcassets */; };
 		A9677556298E685F0025D0C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9677555298E685F0025D0C3 /* Preview Assets.xcassets */; };
 		A9677560298E685F0025D0C3 /* GreetMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A967755F298E685F0025D0C3 /* GreetMeTests.swift */; };
 		A967756A298E685F0025D0C3 /* GreetMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9677569298E685F0025D0C3 /* GreetMeUITests.swift */; };
 		A967756C298E685F0025D0C3 /* GreetMeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A967756B298E685F0025D0C3 /* GreetMeUITestsLaunchTests.swift */; };
-		A9677583298E69450025D0C3 /* GreetMeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A967757D298E69450025D0C3 /* GreetMeFramework.framework */; };
 		A9677584298E69450025D0C3 /* GreetMeFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A967757D298E69450025D0C3 /* GreetMeFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A967758F298E6C7A0025D0C3 /* Mockingbird in Frameworks */ = {isa = PBXBuildFile; productRef = A967758E298E6C7A0025D0C3 /* Mockingbird */; };
+		A9677598298FA7260025D0C3 /* GreetMeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A967757D298E69450025D0C3 /* GreetMeFramework.framework */; };
+		A9677599298FAABA0025D0C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9677550298E685D0025D0C3 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9677583298E69450025D0C3 /* GreetMeFramework.framework in Frameworks */,
+				A9677598298FA7260025D0C3 /* GreetMeFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +116,7 @@
 				A9677568298E685F0025D0C3 /* GreetMeUITests */,
 				A967754C298E685D0025D0C3 /* Products */,
 				E6C22A7B8EA48C672192FE18 /* Generated Mocks */,
+				A9677597298FA7260025D0C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,6 +204,13 @@
 				A9677550298E685D0025D0C3 /* ContentView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A9677597298FA7260025D0C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E6C22A7B8EA48C672192FE18 /* Generated Mocks */ = {
@@ -411,7 +419,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9677551298E685D0025D0C3 /* ContentView.swift in Sources */,
 				A967754F298E685D0025D0C3 /* GreetMeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +445,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9677599298FAABA0025D0C3 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,6 +587,7 @@
 		A9677570298E685F0025D0C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -608,6 +617,7 @@
 		A9677571298E685F0025D0C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
