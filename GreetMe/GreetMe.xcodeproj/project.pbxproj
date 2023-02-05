@@ -18,6 +18,8 @@
 		A967758F298E6C7A0025D0C3 /* Mockingbird in Frameworks */ = {isa = PBXBuildFile; productRef = A967758E298E6C7A0025D0C3 /* Mockingbird */; };
 		A9677598298FA7260025D0C3 /* GreetMeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A967757D298E69450025D0C3 /* GreetMeFramework.framework */; };
 		A9677599298FAABA0025D0C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9677550298E685D0025D0C3 /* ContentView.swift */; };
+		A96775B4298FC0B30025D0C3 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96775B2298FC0B30025D0C3 /* HomePage.swift */; };
+		A96775B5298FC0B30025D0C3 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96775B3298FC0B30025D0C3 /* LoginPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		A9677569298E685F0025D0C3 /* GreetMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetMeUITests.swift; sourceTree = "<group>"; };
 		A967756B298E685F0025D0C3 /* GreetMeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetMeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A967757D298E69450025D0C3 /* GreetMeFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GreetMeFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A96775B2298FC0B30025D0C3 /* HomePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		A96775B3298FC0B30025D0C3 /* LoginPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,8 +221,18 @@
 		A96775A8298FB8740025D0C3 /* Page Objects */ = {
 			isa = PBXGroup;
 			children = (
+				A96775B1298FC0B30025D0C3 /* Page Objects */,
 			);
 			path = "Page Objects";
+			sourceTree = "<group>";
+		};
+		A96775B1298FC0B30025D0C3 /* Page Objects */ = {
+			isa = PBXGroup;
+			children = (
+				A96775B2298FC0B30025D0C3 /* HomePage.swift */,
+				A96775B3298FC0B30025D0C3 /* LoginPage.swift */,
+			);
+			name = "Page Objects";
 			sourceTree = "<group>";
 		};
 		E6C22A7B8EA48C672192FE18 /* Generated Mocks */ = {
@@ -444,7 +458,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A96775B5298FC0B30025D0C3 /* LoginPage.swift in Sources */,
 				A967756C298E685F0025D0C3 /* GreetMeUITestsLaunchTests.swift in Sources */,
+				A96775B4298FC0B30025D0C3 /* HomePage.swift in Sources */,
 				A967756A298E685F0025D0C3 /* GreetMeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
