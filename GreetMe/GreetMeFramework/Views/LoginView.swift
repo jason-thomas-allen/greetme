@@ -9,6 +9,8 @@ import SwiftUI
 
 public struct LoginView: View {
     
+    @EnvironmentObject private var loginVM: LoginViewModel
+    
     public init() {}
     
     public var body: some View {
@@ -17,16 +19,18 @@ public struct LoginView: View {
             VStack {
                 Form {
                     
-                    TextField("User name", text: .init(get: { "" }, set: { $0 }))
+                    TextField("User name", text: $loginVM.userName)
                         .accessibilityIdentifier("usernameTextField")
                     
-                    TextField("Password", text: .init(get: { "" }, set: { $0 }))
+                    TextField("Password", text: $loginVM.password)
                         .accessibilityIdentifier("passwordTextField")
                     
                     HStack {
                         Spacer()
                         Button {
-                            
+                            Task {
+                                await loginVM.login()
+                            }
                         } label: {
                             Text("Login")
                                 .accessibilityIdentifier("loginButton")
@@ -35,7 +39,7 @@ public struct LoginView: View {
                     }
                 }
                 
-                NavigationLink(isActive: .constant(false)) {
+                NavigationLink(isActive: .constant(loginVM.loginStatus == LoginStatus.authenticated)) {
                     HomeView()
                 } label: {
                     EmptyView()
@@ -50,6 +54,6 @@ public struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView().environmentObject(LoginViewModel(service: WebAuthService()))
     }
 }

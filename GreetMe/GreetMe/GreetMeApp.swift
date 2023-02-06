@@ -12,7 +12,7 @@ import GreetMeFramework
 struct GreetMeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView().environmentObject(LoginViewModel(service: WebAuthService()))
         }
     }
 }

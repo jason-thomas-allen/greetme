@@ -20,6 +20,11 @@
 		A9677599298FAABA0025D0C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9677550298E685D0025D0C3 /* ContentView.swift */; };
 		A96775B4298FC0B30025D0C3 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96775B2298FC0B30025D0C3 /* HomePage.swift */; };
 		A96775B5298FC0B30025D0C3 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96775B3298FC0B30025D0C3 /* LoginPage.swift */; };
+		A96775DB299137F90025D0C3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96775D9299137F90025D0C3 /* LoginView.swift */; };
+		A96775DC299137F90025D0C3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96775DA299137F90025D0C3 /* HomeView.swift */; };
+		A96775DE2991398C0025D0C3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96775DD2991398C0025D0C3 /* LoginViewModel.swift */; };
+		A96775E029913C660025D0C3 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96775DF29913C660025D0C3 /* AuthService.swift */; };
+		A96775E229913D0A0025D0C3 /* WebAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96775E129913D0A0025D0C3 /* WebAuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +80,11 @@
 		A967757D298E69450025D0C3 /* GreetMeFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GreetMeFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A96775B2298FC0B30025D0C3 /* HomePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		A96775B3298FC0B30025D0C3 /* LoginPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		A96775D9299137F90025D0C3 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A96775DA299137F90025D0C3 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A96775DD2991398C0025D0C3 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A96775DF29913C660025D0C3 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		A96775E129913D0A0025D0C3 /* WebAuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +195,8 @@
 		A9677589298E699B0025D0C3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A96775E129913D0A0025D0C3 /* WebAuthService.swift */,
+				A96775DF29913C660025D0C3 /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -199,6 +211,8 @@
 		A967758C298E69BD0025D0C3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A96775DA299137F90025D0C3 /* HomeView.swift */,
+				A96775D9299137F90025D0C3 /* LoginView.swift */,
 				A9677550298E685D0025D0C3 /* ContentView.swift */,
 			);
 			path = Views;
@@ -231,6 +245,7 @@
 		A96775CE299126430025D0C3 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				A96775DD2991398C0025D0C3 /* LoginViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -469,6 +484,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A96775E229913D0A0025D0C3 /* WebAuthService.swift in Sources */,
+				A96775DE2991398C0025D0C3 /* LoginViewModel.swift in Sources */,
+				A96775DC299137F90025D0C3 /* HomeView.swift in Sources */,
+				A96775E029913C660025D0C3 /* AuthService.swift in Sources */,
+				A96775DB299137F90025D0C3 /* LoginView.swift in Sources */,
 				A9677599298FAABA0025D0C3 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

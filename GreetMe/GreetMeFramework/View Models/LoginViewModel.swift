@@ -7,8 +7,30 @@
 
 import Foundation
 
+enum LoginStatus {
+    case none
+    case authenticated
+    case denied
+}
+
 public class LoginViewModel: ObservableObject {
     
-    public init() {}
+    @Published var userName: String = ""
+    @Published var password: String = ""
+    @Published var loginStatus: LoginStatus = .none
     
+    private var service: AuthService
+    
+    public init(service: AuthService) {
+        self.service = service
+    }
+    
+    func login() async {
+        do {
+            try await service.loginAsync(username: userName, password: password)
+            loginStatus = .authenticated
+        } catch {
+            loginStatus = .denied
+        }
+    }
 }
