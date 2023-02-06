@@ -6,10 +6,8 @@
 //
 
 import SwiftUI
-    
+
 public struct LoginView: View {
-    
-    var errorMessage: String = ""
     
     public init() {}
     
@@ -18,17 +16,13 @@ public struct LoginView: View {
             
             VStack {
                 Form {
-
-                    TextField("User name", text: .init(
-                        get: { "" },
-                        set: { $0 }))
+                    
+                    TextField("User name", text: .init(get: { "" }, set: { $0 }))
                         .accessibilityIdentifier("usernameTextField")
                     
-                    TextField("Password", text: .init(
-                        get: { "" },
-                        set: { $0 }))
+                    TextField("Password", text: .init(get: { "" }, set: { $0 }))
                         .accessibilityIdentifier("passwordTextField")
-                                        
+                    
                     HStack {
                         Spacer()
                         Button {
@@ -46,7 +40,7 @@ public struct LoginView: View {
                 } label: {
                     EmptyView()
                 }
-
+                
                 
             }
             .navigationTitle("Login")
