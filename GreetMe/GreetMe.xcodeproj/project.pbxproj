@@ -176,7 +176,7 @@
 			children = (
 				A9677589298E699B0025D0C3 /* Services */,
 				A967758A298E69A80025D0C3 /* Models */,
-				A967758B298E69B20025D0C3 /* View Models */,
+				A96775CE299126430025D0C3 /* View Models */,
 				A967758C298E69BD0025D0C3 /* Views */,
 			);
 			path = GreetMeFramework;
@@ -194,13 +194,6 @@
 			children = (
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		A967758B298E69B20025D0C3 /* View Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "View Models";
 			sourceTree = "<group>";
 		};
 		A967758C298E69BD0025D0C3 /* Views */ = {
@@ -233,6 +226,13 @@
 				A96775B3298FC0B30025D0C3 /* LoginPage.swift */,
 			);
 			name = "Page Objects";
+			sourceTree = "<group>";
+		};
+		A96775CE299126430025D0C3 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 		E6C22A7B8EA48C672192FE18 /* Generated Mocks */ = {

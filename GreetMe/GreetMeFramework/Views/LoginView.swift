@@ -11,9 +11,6 @@ public struct LoginView: View {
     
     var errorMessage: String = ""
     
-    
-    var userName = ""
-    
     public init() {}
     
     public var body: some View {
@@ -42,9 +39,6 @@ public struct LoginView: View {
                         }
                         Spacer()
                     }
-                    
-                    Text(errorMessage)
-                        .accessibilityIdentifier("messageText")
                 }
                 
                 NavigationLink(isActive: .constant(false)) {
