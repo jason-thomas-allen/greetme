@@ -14,7 +14,6 @@ enum LoginStatus {
     case validationFailed
 }
 
-@MainActor
 public class LoginViewModel: ObservableObject {
     
     @Published var userName: String = ""
