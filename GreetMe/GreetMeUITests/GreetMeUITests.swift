@@ -11,7 +11,7 @@ final class given_user_is_on_login_page: XCTestCase {
     
     private var app: XCUIApplication!
     private var loginPage: LoginPage!
-            
+    
     override func setUp() {
         app = XCUIApplication()
         loginPage = LoginPage(app: app)
@@ -31,13 +31,23 @@ final class given_user_is_on_login_page: XCTestCase {
     }
     
     func test_when_user_enters_invalid_username_or_password_then_display_invalid_credentials_message() {
-            
-            loginPage.userName = "43906621"
-            loginPage.password = "WrongPassword"
-                    
-            loginPage.login()
-            
-            XCTAssertEqual(loginPage.message, "Invalid credentials")
-        }
-
+        
+        loginPage.userName = "43906621"
+        loginPage.password = "WrongPassword"
+        
+        loginPage.login()
+        
+        XCTAssertEqual(loginPage.message, "Invalid credentials")
+    }
+    
+    func test_when_user_omits_username_or_password_then_display_missing_required_fields_message() {
+        
+        loginPage.userName = ""
+        loginPage.password = ""
+        
+        loginPage.login()
+        
+        XCTAssertEqual(loginPage.message, "Required fields are missing")
+    }
+    
 }

@@ -11,6 +11,7 @@ enum LoginStatus {
     case none
     case authenticated
     case denied
+    case validationFailed
 }
 
 @MainActor
@@ -27,6 +28,12 @@ public class LoginViewModel: ObservableObject {
     }
     
     func login() async {
+        
+        if userName.isEmpty || password.isEmpty {
+            self.loginStatus = .validationFailed
+            return
+        }
+        
         do {
             try await service.loginAsync(username: userName, password: password)
             loginStatus = .authenticated

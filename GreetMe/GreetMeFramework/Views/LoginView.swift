@@ -17,6 +17,8 @@ public struct LoginView: View {
         switch loginVM.loginStatus {
         case .denied:
             return "Invalid credentials"
+        case .validationFailed:
+            return "Required fields are missing"
         default:
             return ""
         }
