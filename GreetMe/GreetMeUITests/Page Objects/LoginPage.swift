@@ -43,5 +43,10 @@ class LoginPage {
     func login() {
         app.buttons["loginButton"].tap()
     }
+    
+    var message: String {
+        app.staticTexts["messageText"].label
+    }
+
 }
 

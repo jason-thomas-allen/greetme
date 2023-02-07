@@ -13,6 +13,15 @@ public struct LoginView: View {
     
     public init() {}
     
+    var errorMessage: String {
+        switch loginVM.loginStatus {
+        case .denied:
+            return "Invalid credentials"
+        default:
+            return ""
+        }
+    }
+    
     public var body: some View {
         NavigationView {
             
@@ -37,6 +46,9 @@ public struct LoginView: View {
                         }
                         Spacer()
                     }
+                    
+                    Text(errorMessage)
+                        .accessibilityIdentifier("messageText")
                 }
                 
                 NavigationLink(isActive: .constant(loginVM.loginStatus == LoginStatus.authenticated)) {

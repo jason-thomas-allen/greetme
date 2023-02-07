@@ -25,6 +25,7 @@
 		A96775DE2991398C0025D0C3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96775DD2991398C0025D0C3 /* LoginViewModel.swift */; };
 		A96775E029913C660025D0C3 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96775DF29913C660025D0C3 /* AuthService.swift */; };
 		A96775E229913D0A0025D0C3 /* WebAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96775E129913D0A0025D0C3 /* WebAuthService.swift */; };
+		A96775EE2991DEBA0025D0C3 /* StubAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96775ED2991DEBA0025D0C3 /* StubAuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		A96775DD2991398C0025D0C3 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		A96775DF29913C660025D0C3 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A96775E129913D0A0025D0C3 /* WebAuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAuthService.swift; sourceTree = "<group>"; };
+		A96775ED2991DEBA0025D0C3 /* StubAuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubAuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 		A967754D298E685D0025D0C3 /* GreetMe */ = {
 			isa = PBXGroup;
 			children = (
+				A96775EC2991DEBA0025D0C3 /* Stub Services */,
 				A967754E298E685D0025D0C3 /* GreetMeApp.swift */,
 				A9677552298E685F0025D0C3 /* Assets.xcassets */,
 				A9677554298E685F0025D0C3 /* Preview Content */,
@@ -248,6 +251,14 @@
 				A96775DD2991398C0025D0C3 /* LoginViewModel.swift */,
 			);
 			path = "View Models";
+			sourceTree = "<group>";
+		};
+		A96775EC2991DEBA0025D0C3 /* Stub Services */ = {
+			isa = PBXGroup;
+			children = (
+				A96775ED2991DEBA0025D0C3 /* StubAuthService.swift */,
+			);
+			path = "Stub Services";
 			sourceTree = "<group>";
 		};
 		E6C22A7B8EA48C672192FE18 /* Generated Mocks */ = {
@@ -457,6 +468,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A967754F298E685D0025D0C3 /* GreetMeApp.swift in Sources */,
+				A96775EE2991DEBA0025D0C3 /* StubAuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
