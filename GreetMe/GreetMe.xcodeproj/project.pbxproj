@@ -26,7 +26,6 @@
 		A96775E029913C660025D0C3 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96775DF29913C660025D0C3 /* AuthService.swift */; };
 		A96775E229913D0A0025D0C3 /* WebAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96775E129913D0A0025D0C3 /* WebAuthService.swift */; };
 		A96775EE2991DEBA0025D0C3 /* StubAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96775ED2991DEBA0025D0C3 /* StubAuthService.swift */; };
-		A96775F12991F1AB0025D0C3 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96775F02991F1AB0025D0C3 /* LoginViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,7 +87,6 @@
 		A96775DF29913C660025D0C3 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A96775E129913D0A0025D0C3 /* WebAuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAuthService.swift; sourceTree = "<group>"; };
 		A96775ED2991DEBA0025D0C3 /* StubAuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubAuthService.swift; sourceTree = "<group>"; };
-		A96775F02991F1AB0025D0C3 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,7 +169,6 @@
 		A967755E298E685F0025D0C3 /* GreetMeTests */ = {
 			isa = PBXGroup;
 			children = (
-				A96775EF2991F1AB0025D0C3 /* View Model Tests */,
 				A967755F298E685F0025D0C3 /* GreetMeTests.swift */,
 			);
 			path = GreetMeTests;
@@ -262,14 +259,6 @@
 				A96775ED2991DEBA0025D0C3 /* StubAuthService.swift */,
 			);
 			path = "Stub Services";
-			sourceTree = "<group>";
-		};
-		A96775EF2991F1AB0025D0C3 /* View Model Tests */ = {
-			isa = PBXGroup;
-			children = (
-				A96775F02991F1AB0025D0C3 /* LoginViewModelTests.swift */,
-			);
-			path = "View Model Tests";
 			sourceTree = "<group>";
 		};
 		E6C22A7B8EA48C672192FE18 /* Generated Mocks */ = {
@@ -487,7 +476,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A96775F12991F1AB0025D0C3 /* LoginViewModelTests.swift in Sources */,
 				A9677560298E685F0025D0C3 /* GreetMeTests.swift in Sources */,
 				260AED7D7B445EBC45758812 /* GreetMeTests-GreetMeFrameworkMocks.generated.swift in Sources */,
 			);
