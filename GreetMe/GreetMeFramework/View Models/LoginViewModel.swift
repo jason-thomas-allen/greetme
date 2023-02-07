@@ -13,6 +13,7 @@ enum LoginStatus {
     case denied
 }
 
+@MainActor
 public class LoginViewModel: ObservableObject {
     
     @Published var userName: String = ""
